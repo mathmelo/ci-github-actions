@@ -6,10 +6,13 @@ on:
 jobs: 
   check-application:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        version: [20, 14]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20.0
+          node-version: ${{ matrix.version }}
       - run: npm run test
       - run: npm run start
