@@ -7,11 +7,17 @@ jobs:
   sonarcloud:
     runs-on: ubuntu-latest
     steps:
+      - name: Generate coverage
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
       - run: npm run test:cov
+
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
   check-application:
     runs-on: ubuntu-latest
     steps:
