@@ -1,7 +1,27 @@
 function soma(a, b) {
-    return a + b
+	return a + b;
 }
 
-console.log('passou aqui')
+function divisao(a, b) {
+	return a / b;
+}
 
-module.exports = soma
+function multiplicacao(a, b) {
+	return a * b;
+}
+
+function subtracao(a, b) {
+	return a - b;
+}
+
+function potencia(a, b) {
+	return Math.pow(a, b);
+}
+
+module.exports = {
+	soma,
+	multiplicacao,
+	subtracao,
+	potencia,
+	divisao,
+};
