@@ -1,6 +1,12 @@
-const soma = require("./index.js");
+const {
+	soma,
+	subtracao,
+	divisao,
+	multiplicacao,
+	potencia,
+} = require("./index.js");
 const { deepStrictEqual } = require("assert");
-const { test } = require("node:test");
+const { test, describe } = require("node:test");
 
 /**
  * Node v22.11.0 LTS
@@ -8,6 +14,20 @@ const { test } = require("node:test");
  * Gerar arquivo lcov.info para integração com sonar scanner
  */
 
-test("teste da funcao soma", () => {
-	deepStrictEqual(30, soma(15, 15));
+describe("Operacoes basicas", () => {
+	test("teste da funcao soma", () => {
+		deepStrictEqual(30, soma(15, 15));
+	});
+	test("teste da funcao multiplicacao", () => {
+		deepStrictEqual(16, multiplicacao(4, 4));
+	});
+	test("teste da funcao divisao", () => {
+		deepStrictEqual(6, divisao(30, 5));
+	});
+	test("teste da funcao subtracao", () => {
+		deepStrictEqual(75, subtracao(100, 25));
+	});
+	test("teste da funcao potencia", () => {
+		deepStrictEqual(8, potencia(2, 3));
+	});
 });
