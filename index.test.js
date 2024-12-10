@@ -11,7 +11,7 @@ const {
 	triplica,
 } = require("./index.js");
 const { deepStrictEqual } = require("assert");
-const { test, describe, todo } = require("node:test");
+const { test, describe } = require("node:test");
 
 /**
  * Node v22.11.0 LTS

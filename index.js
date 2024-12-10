@@ -48,6 +48,5 @@ module.exports = {
 	adiciona200,
 	adiciona300,
 	dobra,
-	potencia,
 	triplica,
 };
