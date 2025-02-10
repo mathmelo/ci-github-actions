@@ -5,8 +5,11 @@
   <img alt="NPM" src="https://img.shields.io/github/stars/mathmelo/ci-github-actions">
 </p>
 <p align="center">
-  <img alt="NPM" src="https://sonarcloud.io/api/project_badges/quality_gate?project=mathmelo_ci-github-actions">
+  <a href="https://sonarcloud.io/organizations/mathmelo2000/projects" target="_blank" rel=“noreferrer”>
+    <img alt="NPM" src="https://sonarcloud.io/api/project_badges/quality_gate?project=mathmelo_ci-github-actions">
+  </a>
 </p>
+
 
 ## 💡 Objective
 
